@@ -1,0 +1,43 @@
+main{
+	width: 200px;
+	height: 200px;
+	/*border: 1px solid black;*/
+	/*设置3d变换*/
+	transform-style: preserve-3d;
+	position: relative;
+	transition-duration: 3s;
+	margin: 200px auto;
+}
+ div{
+	width:100px;
+	height: 100px;
+	background-size: 100px 100px;
+	position: absolute;
+}
+.first{
+	background-image: url(../imgs/1.jpg);
+	transform:translateZ(100px);
+}
+.second{
+	background-image: url(../imgs/2.jpg);
+}
+.third{
+	background-image: url(../imgs/3.jpg);
+	transform: rotateX(90deg) translateZ(50px) translateY(50px);
+}
+.forth{
+	background-image: url(../imgs/4.jpg);
+	transform: rotateX(90deg) translateZ(-50px) translateY(50px);
+}
+.fifth{
+	background-image: url(../imgs/5.jpg);
+	transform: rotateY(90deg) translateZ(50px) translateX(-50px);
+}
+.sixth{
+	background-image: url(../imgs/6.jpg);
+	transform: rotateY(90deg) translateZ(-50px) translateX(-50px);
+}
+body:hover main{
+	transform: rotateX(220deg) rotateX(280deg) rotate(330deg);
+}
+
