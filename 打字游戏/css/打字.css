@@ -1,0 +1,14 @@
+.word{
+	width: 400px;
+	height: 400px;
+	border: 2px solid black;
+	border-radius: 50%;
+	font-size: 300px;
+	font-weight: sold;
+	text-align: center;
+	margin: auto;
+	margin-top: -50px;
+}
+.red{
+	color: red;
+}
